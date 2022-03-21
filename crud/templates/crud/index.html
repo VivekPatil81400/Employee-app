@@ -1,0 +1,22 @@
+{% extends 'crud/base.html' %}
+
+{% block body %}
+{% for item in employee %}
+
+<div class="row">
+    <div class="col-md-4">
+        <h1>{{ item.firstname}}</h1>
+        <h5>{{ item.lastname }}</h5>
+        <h6>{{ item.emailid }}</h6>
+    </div>
+    <div class="col-md-2">
+        <a href="{% url 'detail' item.id %}" class="btn btn-success">Details</a>
+        <a href="{% url 'delete' item.id %}" class="btn btn-success">Delete</a>
+        <a href="{% url 'update' item.id %}" class="btn btn-success">Update</a>
+    </div>
+</div>
+
+<hr>
+
+{% endfor %}
+{% endblock %}

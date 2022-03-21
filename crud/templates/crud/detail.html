@@ -1,0 +1,19 @@
+{% extends 'crud/base.html' %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-6">
+        <h2>First name = {{ employee.firstname }}<h2>
+        <h2>Last name = {{ employee.lastname }}<h2>
+        <h2>Gender = {{ employee.gender }}<h2>
+        <h2>Mobile number = {{ employee.mobile }}<h2>
+        <h2>Address = {{ employee.address }}<h2>
+        <h2>Email id = {{ employee.emailid }}<h2>
+        <h2>Education = {{ employee_detail.education }}<h2>
+        <h2>Department = {{ employee_detail.department }}</h2>
+        <h2>Salary = {{ employee_detail.salary }}</h2>
+        <h2>Manager = {{ employee_detail.manager }}</h2>
+            
+    </div>
+</div>
+{% endblock %}
